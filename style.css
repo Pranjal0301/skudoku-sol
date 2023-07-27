@@ -1,0 +1,359 @@
+.navbar {
+    background-color: white;
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between; /* Align items to left and right */
+    align-items: center; /* Vertically center items */
+  }
+  
+  .navbar-left h1 {
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  li {
+    font-size: medium;
+    margin-top: 1rem;;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  li:last-child {
+    margin-right: 0;
+  }
+  .proj-title{
+    font-size: 20px;
+  }
+#initialBoard {
+    margin-left: 31%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+#answerBoard {
+    margin-right: 20%;
+    float: right;
+    margin-top: 10%;
+}
+.input-sku{
+    margin: -3px;
+}
+p{
+    font-size: 20px;
+}
+input{
+    font-size: 17px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border: 1px solid black;
+    width: 61px;
+    height: 53px;
+}
+.solve-btn{
+    font-size: 15px;
+    margin-left: 47%;
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+h2 {
+    text-align: center;
+    margin-top: 6%;
+}
+.author{
+    font-size: 17px;
+}
+#answerBoard {
+    display: grid;
+    grid-template-columns: repeat(9, 30px);
+    grid-template-rows: repeat(9, 45px);
+    grid-gap: 30px;
+    margin-top: 50px;
+    margin-right: 34%;
+    float: right;
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.input-sku1{
+            margin: -3px;
+            background-color: #f2f2f2;
+      
+      
+}
+/* Grey color for the output group of the upper right 3x3 block */
+.row:nth-child(1):nth-child(-n+3) .cell:nth-child(7),
+.row:nth-child(1):nth-child(-n+3) .cell:nth-child(8),
+.row:nth-child(1):nth-child(-n+3) .cell:nth-child(9),
+.row:nth-child(2):nth-child(-n+3) .cell:nth-child(7),
+.row:nth-child(2):nth-child(-n+3) .cell:nth-child(8),
+.row:nth-child(2):nth-child(-n+3) .cell:nth-child(9),
+.row:nth-child(3):nth-child(-n+3) .cell:nth-child(7),
+.row:nth-child(3):nth-child(-n+3) .cell:nth-child(8),
+.row:nth-child(3):nth-child(-n+3) .cell:nth-child(9) {
+    background-color: #f2f2f2;
+}
+
+.row:nth-child(1):nth-child(-n+3) .cell:nth-child(1),
+.row:nth-child(1):nth-child(-n+3) .cell:nth-child(2),
+.row:nth-child(1):nth-child(-n+3) .cell:nth-child(3),
+.row:nth-child(2):nth-child(-n+3) .cell:nth-child(1),
+.row:nth-child(2):nth-child(-n+3) .cell:nth-child(2),
+.row:nth-child(2):nth-child(-n+3) .cell:nth-child(3),
+.row:nth-child(3):nth-child(-n+3) .cell:nth-child(1),
+.row:nth-child(3):nth-child(-n+3) .cell:nth-child(2),
+.row:nth-child(3):nth-child(-n+3) .cell:nth-child(3) {
+    background-color: #f2f2f2;
+}
+
+.row:nth-child(4):nth-child(-n+6) .cell:nth-child(4),
+.row:nth-child(4):nth-child(-n+6) .cell:nth-child(5),
+.row:nth-child(4):nth-child(-n+6) .cell:nth-child(6),
+.row:nth-child(5):nth-child(-n+6) .cell:nth-child(4),
+.row:nth-child(5):nth-child(-n+6) .cell:nth-child(5),
+.row:nth-child(5):nth-child(-n+6) .cell:nth-child(6),
+.row:nth-child(6):nth-child(-n+6) .cell:nth-child(4),
+.row:nth-child(6):nth-child(-n+6) .cell:nth-child(5),
+.row:nth-child(6):nth-child(-n+6) .cell:nth-child(6) {
+    background-color: #f2f2f2;
+}
+
+.row:nth-child(7):nth-child(-n+9) .cell:nth-child(1),
+        .row:nth-child(7):nth-child(-n+9) .cell:nth-child(2),
+        .row:nth-child(7):nth-child(-n+9) .cell:nth-child(3),
+        .row:nth-child(8):nth-child(-n+9) .cell:nth-child(1),
+        .row:nth-child(8):nth-child(-n+9) .cell:nth-child(2),
+        .row:nth-child(8):nth-child(-n+9) .cell:nth-child(3),
+        .row:nth-child(9):nth-child(-n+9) .cell:nth-child(1),
+        .row:nth-child(9):nth-child(-n+9) .cell:nth-child(2),
+        .row:nth-child(9):nth-child(-n+9) .cell:nth-child(3) {
+            background-color: #f2f2f2;
+        }
+
+        .row:nth-child(7):nth-child(-n+9) .cell:nth-child(7),
+        .row:nth-child(7):nth-child(-n+9) .cell:nth-child(8),
+        .row:nth-child(7):nth-child(-n+9) .cell:nth-child(9),
+        .row:nth-child(8):nth-child(-n+9) .cell:nth-child(7),
+        .row:nth-child(8):nth-child(-n+9) .cell:nth-child(8),
+        .row:nth-child(8):nth-child(-n+9) .cell:nth-child(9),
+        .row:nth-child(9):nth-child(-n+9) .cell:nth-child(7),
+        .row:nth-child(9):nth-child(-n+9) .cell:nth-child(8),
+        .row:nth-child(9):nth-child(-n+9) .cell:nth-child(9) {
+            background-color: #f2f2f2;
+        }
+/* White color for all other cells */
+.cell {
+    background-color: white;
+}
+@media only screen and (max-width: 1200px) {
+    #initialBoard {
+        margin-left: 31%;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+    
+    #answerBoard {
+        margin-right: 20%;
+        float: right;
+        margin-top: 10%;
+    }
+    input{
+        font-size: 17px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 1px;
+        margin-right: 1px;
+        border: 1px solid black;
+        width: 61px;
+        height: 53px;
+    }
+    #answerBoard {
+        display: grid;
+        grid-template-columns: repeat(9, 30px);
+        grid-template-rows: repeat(9, 45px);
+        grid-gap: 30px;
+        margin-top: 50px;
+        margin-right: 20%;
+        float: right;
+    }
+    .solve-btn{
+        font-size: 15px;
+        margin-left: 53%;
+        margin-top: 30px;
+        border: 1px solid black;
+        padding: 10px;
+    }
+  }
+@media only screen and (max-width: 900px) {
+    #initialBoard {
+        margin-left: 20%;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+    
+    #answerBoard {
+        margin-right: 20%;
+        float: right;
+        margin-top: 10%;
+    }
+    input{
+        font-size: 17px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 1px;
+        margin-right: 1px;
+        border: 1px solid black;
+        width: 61px;
+        height: 53px;
+    }
+    #answerBoard {
+        display: grid;
+        grid-template-columns: repeat(9, 30px);
+        grid-template-rows: repeat(9, 45px);
+        grid-gap: 30px;
+        margin-top: 50px;
+        margin-right: 21%;
+        float: right;
+    }
+    .solve-btn{
+        font-size: 15px;
+        margin-left: 47%;
+        margin-top: 30px;
+        border: 1px solid black;
+        padding: 10px;
+    }
+  }
+  @media only screen and (max-width: 730px) {
+    #initialBoard {
+        margin-left: 21%;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+    
+    #answerBoard {
+        margin-right: 20%;
+        float: right;
+        margin-top: 10%;
+    }
+    input{
+        font-size: 17px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 1px;
+        margin-right: 1px;
+        border: 1px solid black;
+        width: 40px;
+        height: 45px;
+    }
+    #answerBoard {
+    display: grid;
+    grid-template-columns: repeat(9, 25px);
+    grid-template-rows: repeat(9, 45px);
+    grid-gap: 30px;
+    margin-top: 50px;
+    margin-right: 16%;
+    float: right;
+}
+.solve-btn{
+    font-size: 15px;
+    margin-left: 47%;
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+  }
+
+  @media only screen and (max-width: 500px) {
+    #initialBoard {
+        margin-left: 15%;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+    
+    #answerBoard {
+        margin-right: 20%;
+        float: right;
+        margin-top: 10%;
+    }
+    input{
+        font-size: 17px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 1px;
+        margin-right: 1px;
+        border: 1px solid black;
+        width: 35px;
+        height: 35px;
+    }
+    #answerBoard {
+    display: grid;
+    grid-template-columns: repeat(9, 10px);
+    grid-template-rows: repeat(9, 35px);
+    grid-gap: 30px;
+    margin-top: 50px;
+    margin-right: 10%;
+    float: right;
+}
+.solve-btn{
+    font-size: 15px;
+    margin-left: 45%;
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+  }
+
+  @media only screen and (max-width: 380px) {
+    #initialBoard {
+        margin-left: 15%;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+    
+    #answerBoard {
+        margin-right: 20%;
+        float: right;
+        margin-top: 10%;
+    }
+    input{
+        font-size: 17px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 1px;
+        margin-right: 1px;
+        border: 1px solid black;
+        width: 30px;
+        height: 35px;
+    }
+    #answerBoard {
+    display: grid;
+    grid-template-columns: repeat(9, 5px);
+    grid-template-rows: repeat(9, 35px);
+    grid-gap: 30px;
+    margin-top: 50px;
+    margin-right: 10%;
+    float: right;
+}
+.solve-btn{
+    font-size: 15px;
+    margin-left: 41%;
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+  }
