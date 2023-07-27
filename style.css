@@ -306,7 +306,7 @@ h2 {
     grid-template-rows: repeat(9, 35px);
     grid-gap: 30px;
     margin-top: 50px;
-    margin-right: 10%;
+    margin-right: 9%;
     float: right;
 }
 .solve-btn{
